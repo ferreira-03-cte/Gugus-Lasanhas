@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="shortcut icon" type="image/png" href="img/logotipo.png" />
+
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family= Parisienne " rel="stylesheet">
+
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/plus.css">
+    <script src="js/materialize.js"></script>
+    <script src="js/materialize.min.js"></script>
+
+    <title>Gugu's Lasanhas</title>
+
+</head>
+
+<body>
+    <!--Inicio do Navbar (menu)-->
+    <main>
+        <div>
+            <!--div para fixar o menu no topo da página-->
+            <div id="inicio" class="navbar-fixed scrollspy">
+                <nav>
+                    <div class="nav-wrapper z-depth-1 yellow darken-2">
+                        <a href="#inicio" class="brand-logo scrollspy" id="logotipo">Gugu's Lasanhas</a>
+                        <!--Link com o incone para exibição do menu em dispositivos móveis-->
+                        <a href="#" data-activates="menu-mobile" class="button-collapse right">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <!--Menu para desktop-->
+                        <ul id="menu-desktop" class="right hide-on-med-and-down">
+                            <li><a href="#inicio"><i class="material-icons">home</i></a></li>
+                            <li><a href="#quem_somos">Quem somos</a></li>
+                            <li><a href="#cardapio">Cardápio</a></li>
+                            <li><a href="#contatos">Contatos</a></li>
+                            <li><a href="entrar.html">Entrar</a></li>
+                        </ul>
+                    </div>
+            </div>
+            <!--Menu para ser exibido em dispositivos móveis-->
+            <ul id="menu-mobile" class="side-nav">
+                <li><a href="#inicio"><i class="material-icons">home</i>Início</a></li>
+                <li><a href="#quem_somos"><i class="material-icons">business_center</i>Quem somos</a></li>
+                <li><a href="#cardapio"><i class="material-icons">local_dining</i>Cardápio</a></li>
+                <li><a href="#contatos"><i class="material-icons">contacts</i>Contatos</a></li>
+                <li><a href="entrar.html"><i class="material-icons">account_circle</i>Entrar</a></li>
+            </ul>
+
+            </nav>
+        </div>
+        <!--fim do Navbar (menu)-->
+
+        <!--Script de importação de codigos necessarios para o menu para dispositivos móveis-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+        <!--Função Javascript para exibir e ocultar o menu para dispositivos móveis-->
+        <script>
+            $(function () {
+                $(".button-collapse").sideNav({
+                    menuWidth: 250,
+                    edge: 'right'
+
+                });
+            });
+        </script>
+
+        <!--inicio da seção de apresentação-->
+        <section>
+            <div id="img-fundo" class="">
+                <img class="responsive-img" src="img/teste.png">
+            </div>
+            <!--inicio do scrollspy 1-->
+
+            <div id="quem_somos" class="divider scrollspy"></div>
+            <div class="container ">
+                <div class="section">
+                    <h1>Gugus Lasanhas</h1>
+                    <h4>Maior Delivery de Caetité</h4>
+                    <P>
+                        rem ipsum mi porta a orci gravida dictumst volutpat, proin lacus nisi praesent eleifend aliquam
+                        a
+                        sodales, interdum ad hendrerit justo habitant metus imperdiet. diam felis ut aliquam
+                        consectetur
+                        condimentum orci eros, facilisis aliquet quam semper erat volutpat ut, justo quisque platea
+                        interdum
+                        mauris sollicitudin. tempor ut turpis ut condimentum lorem vitae ut imperdiet, gravida congue
+                        cubilia
+                        iaculis mi vestibulum cubilia, vehicula ad phasellus cubilia ac pulvinar per. commodo sodales
+                        odio
+                        curae eros amet cras mollis, velit habitant adipiscing porta ut himenaeos, nulla sociosqu ac
+                        platea
+                        neque consectetur. porttitor quisque amet justo fringilla dapibus mauris nunc primis urna
+                        iaculis
+                        fermentum, venenatis dui ante duis habitasse platea donec at sem. Aenean habitasse commodo
+                        tristique etc.
+
+                    </P>
+                </div>
+                <!--Div para exibir linha que separa as seções-->
+                <!--inicio do scrollspy 2-->
+                <div id="cardapio" class="divider scrollspy"></div>
+                <div class="section">
+                    <h1 class="center">Cardápio</h1>
+                </div>
+
+                <!--inicio da seção de apresentação dos produtos (CARD)-->
+                <section>
+                    <div class="row">
+                        <!--inicio do CARD 1-->
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img class="responsive-img" src="img/bebida.png">
+                                    <span class="card-title ">Bebidas</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a class="btn waves-effect waves-light yellow darken-2 " href="#">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--inicio do CARD 2-->
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/lasanha.png">
+                                    <span class="card-title">Lasanhas</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a class="btn waves-effect waves-light yellow darken-2 " href="#">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--inicio do CARD 3-->
+                        <div class="col s12 m4">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="img/sobremesa.png">
+                                    <span class="card-title">Sobremesas</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a class="btn waves-effect waves-light yellow darken-2 " href="#">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+    <!--Inicio do footer (rodapé)-->
+    <!--inicio do scrollspy 3-->
+    <footer id="contatos" class="page-footer  yellow darken-2 scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h4 class="white-text">Contatos</h4>
+                    <p class="grey-text text-lighten-4"> Telefone: (77) 99832-981</p>
+                    <p class="grey-text text-lighten-4">E-mail: example@name.com</p>
+                    <p class="grey-text text-lighten-4">
+                        Rua Fulano de Tal, nº 000 -Bairro Cicrano<br>
+                        Caetité - Ba
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30961.87193313006!2d-42.50458840453849!3d-14.063355389825182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x744d5cf25ec469d%3A0xe9207ac521ef2d52!2sCaetit%C3%A9%2C+BA%2C+46400-000!5e0!3m2!1spt-BR!2sbr!4v1540881264470"
+                        width="298" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h4 class="white-text">Rede Sociais</h4>
+                    <ul id="rede_sociais">
+                        <li><a class="grey-text text-lighten-3" href="#!"><img src="img/rede-social/Facebook_48x48.png"></a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><img src="img/rede-social/Instagram_48x48.png"></a></a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><img src="img/rede-social/SnapChat_48x48.png"></a></a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><img src="img/rede-social/Google_48x48.png"></a></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © Gúgu's Lasanhas 2018 - Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+    <!--Codigo javaScript do scrolspy-->
+    <script>
+        $(document).ready(function () {
+            $('.scrollspy').scrollSpy({
+                scrollOffset: 40
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+@font-face{
+    font-family: thiago;
+    src: url('fontes/Courgette-Regular.ttf')
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+#logotipo {
+    padding-left: 15px; 
+    font-size: 1.9rem;
+}
+
+#img-logotipo {
+    width: 40px;
+    height: 40px;
+   
+}
+
+#rede_sociais{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#menu-desktop a{
+    font-size: 16px;
+
+}
+
+#img-fundo img{
+    width: 100%;
+    
+}
+
+#login{
+margin-top: 40px;
+margin-bottom: 40px; 
+}
