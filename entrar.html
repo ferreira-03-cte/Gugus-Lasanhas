@@ -5,20 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!--Favicon do website-->
     <link rel="shortcut icon" type="image/png" href="img/logotipo.png" />
-
+    <!--Link dos incones-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
-
-    <link href="https://fonts.googleapis.com/css?family= Parisienne " rel="stylesheet">
-
+    <!--Link do css-->
+    <link rel="stylesheet" href="css/plus.css">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/plus.css">
-    <script src="js/materialize.js"></script>
-    <script src="js/materialize.min.js"></script>
-
+    <!--Titulo da pagina-->
     <title>Gugu's Lasanhas</title>
 
 </head>
@@ -52,22 +47,6 @@
             </nav>
         </div>
         <!--fim do Navbar (menu)-->
-
-        <!--Script de importação de codigos necessarios para o menu para dispositivos móveis-->
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-        <!--Função Javascript para exibir e ocultar o menu para dispositivos móveis-->
-        <script>
-            $(function () {
-                $(".button-collapse").sideNav({
-                    menuWidth: 250,
-                    edge: 'right'
-                });
-            });
-        </script>
-
         <!--Inicio dos container de login-->
         <div class="container center">
             <div id="login" class="row">
@@ -86,7 +65,8 @@
                                                 seu e-mail</label>
                                         </div>
                                         <div class="input-field col s12">
-                                            <i class="medium material-icons prefix">create</i>
+                                            <i class="medium material-icons prefix">https
+                                            </i>
                                             <input data-length="14" type="password" id="senha" class="validate">
                                             <label for="Senha">Senha</label>
                                         </div>
@@ -151,6 +131,13 @@
                 </div>
             </div>
         </footer>
+
+        <!--Jquery JS-->
+        <script src="js/jquery-3.3.1.js"></script>
+        <!--materialize JS-->
+        <script src="js/materialize.js"></script>
+        <!--funcçoes de inicialização extras JS-->
+        <script src="js/funcoes_materialize.js"></script>
 </body>
 
 </html>
