@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Favicon do website-->
+    <link rel="shortcut icon" type="image/png" href="img/logotipo.png" />
+    <!--Link dos incones-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Link do css-->
+    <link rel="stylesheet" href="css/plus.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <!--Titulo da pagina-->
+    <title>Gugu's Lasanhas</title>
+
+</head>
+
+<body>
+
+    <!--Inicio do Navbar (menu)-->
+    <main>
+        <nav class="nav-extended">
+            <div class="nav-wrapper z-depth-1 yellow darken-2">
+                <a href="cardapio.html" id="logotipo" class="brand-logo">Cardápio</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="menu-desktop" class="right hide-on-med-and-down">
+                    <li><a href="index.html"><i class="medium material-icons">home</i></a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="index.html"><i class="material-icons">home</i>início</a></li>
+                </ul>
+            </div>
+            <div class="nav-content">
+                <ul id="cardapio" class="tabs trasnparent">
+                    <li class="tab"><a class="active" href="#lasanhas">Lasanhas</a></li>
+                    <li class="tab"><a href="#bebidas">Bebidas</a></li>
+                    <li class="tab"><a href="#sobremesas">Sobremesas</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="lasanhas" class="col s12">
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>SABOR</th>
+                        <th>INGREDIENTES</th>
+                        <th>P</th>
+                        <th>M</th>
+                        <th>G</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Quatro Queijos</td>
+                        <td>Mussarela, prato, queijo minas, parmezão. </td>
+                        <td>R$ 15.00</td>
+                        <td>R$ 20.00</td>
+                        <td>R$ 25.00</td>
+                        <td> <a class="btn-floating btn-small waves-effect waves-light yellow darken-2"><i class="material-icons">add</i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Frango</td>
+                        <td>Frango, Milho, Catupiry, Mussarela.</td>
+                        <td>R$ 15.00</td>
+                        <td>R$ 20.00</td>
+                        <td>R$ 30.00</td>
+                        <td> <a class="btn-floating btn-small waves-effect waves-light yellow darken-2"><i class="material-icons">add</i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Bolonhesa</td>
+                        <td>Carne moida, presunto, mussarela, azeitona, catupiry</td>
+                        <td>R$ 15.00</td>
+                        <td>R$ 20.00</td>
+                        <td>R$40.00</td>
+                        <td> <a class="btn-floating btn-small waves-effect waves-light yellow darken-2"><i class="material-icons">add</i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div id="bebidas" class="col s12">
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>PREÇO</th>
+                        
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Coca-cola 1 litro</td>
+                        <td>R$ 5.00</td>
+                        <td> <a class="btn-floating btn-small waves-effect waves-light yellow darken-2"><i class="material-icons">add</i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Guaraná Kuat lata 300ml</td>
+                        <td>R$ 8.00</td>
+                        <td> <a class="btn-floating btn-small waves-effect waves-light yellow darken-2"><i class="material-icons">add</i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div id="sobremesas" class="col s12">
+            <table class="responsive-table">
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>PREÇO</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Doce de leite</td>
+                        <td>R$ 15.00</td>
+                        <td> <a class="btn-floating btn-small waves-effect waves-light yellow darken-2"><i class="material-icons">add</i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Doce de goiaba</td>
+                        <td>R$ 8.00</td>
+                        <td> <a class="btn-floating btn-small waves-effect waves-light yellow darken-2"><i class="material-icons">add</i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <!--Jquery JS-->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!--materialize JS-->
+    <script src="js/materialize.js"></script>
+    <!--funcçoes de inicialização extras JS-->
+    <script src="js/funcoes_materialize.js"></script>
+</body>
+
+</html>
