@@ -5,85 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!--Favicon do website-->
     <link rel="shortcut icon" type="image/png" href="img/logotipo.png" />
-
+    <!--Link dos incones-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
-
-    <link href="https://fonts.googleapis.com/css?family= Parisienne " rel="stylesheet">
-
+    <!--Link do css-->
+    <link rel="stylesheet" href="css/plus.css">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/plus.css">
-    <script src="js/materialize.js"></script>
-    <script src="js/materialize.min.js"></script>
-
+    <!--Titulo da pagina-->
     <title>Gugu's Lasanhas</title>
 
 </head>
 
-<body>
-    <!--Inicio do Navbar (menu)-->
-    <main>
-        <div>
-            <!--div para fixar o menu no topo da página-->
-            <div id="inicio" class="navbar-fixed scrollspy">
-                <nav>
-                    <div class="nav-wrapper z-depth-1 yellow darken-2">
-                        <a href="#inicio" class=" scrollspy" id="logotipo">Gugu's Lasanhas</a>
-                        <!--Link com o incone para exibição do menu em dispositivos móveis-->
-                        <a href="#" data-activates="menu-mobile" class="button-collapse right">
-                            <i class=" medium material-icons">menu</i>
-                        </a>
-                        <!--Menu para desktop-->
-                        <ul id="menu-desktop" class="right hide-on-med-and-down">
-                            <li><a href="#inicio"><i class="medium material-icons">home</i></a></li>
-                            <li><a href="#quem_somos">Quem somos</a></li>
-                            <li><a href="#cardapio">Cardápio</a></li>
-                            <li><a href="#contatos">Contatos</a></li>
-                            <li><a href="entrar.html">Entrar</a></li>
-                        </ul>
-                    </div>
-            </div>
-            <!--Menu para ser exibido em dispositivos móveis-->
-            <ul id="menu-mobile" class="side-nav">
-                <li><a class="sidenav-close" href="#inicio"><i class=" material-icons">home</i>Início</a></li>
-                <li><a class="sidenav-close" href="#quem_somos"><i class=" material-icons">business_center</i>Quem
-                        somos</a></li>
-                <li><a class="sidenav-close" href="#cardapio"><i class=" material-icons">local_dining</i>Cardápio</a></li>
-                <li><a class="sidenav-close" href="#contatos"><i class=" material-icons">contacts</i>Contatos</a></li>
-                <li><a class="sidenav-close" href="entrar.html"><i class=" material-icons">account_circle</i>Entrar</a></li>
-            </ul>
 
-            </nav>
+<body>
+    <main>
+        <!--div para fixar o menu no topo da página-->
+        <div id="inicio" class="navbar-fixed scrollspy">
+            <!--Inicio do Navbar (menu)-->
+            <nav>
+                <div class="nav-wrapper z-depth-1 yellow darken-2">
+                    <a href="#inicio" class=" scrollspy" id="logotipo">Gugu's Lasanhas</a>
+                    <!--Link com o icone para exibição do menu em dispositivos móveis-->
+                    <a href="#" data-activates="menu-mobile" class="button-collapse right">
+                        <i class=" medium material-icons">menu</i>
+                    </a>
+                    <!--Menu para desktop-->
+                    <ul id="menu-desktop" class="right hide-on-med-and-down">
+                        <li><a href="#inicio"><i class="medium material-icons">home</i></a></li>
+                        <li><a href="#quem_somos">Quem somos</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                        <li><a href="entrar.html">Entrar</a></li>
+                    </ul>
+                </div>
         </div>
+        <!--Menu para ser exibido em dispositivos móveis (sidenav)-->
+        <ul id="menu-mobile" class="side-nav">
+            <li><a class="sidenav-close" href="#inicio"><i class=" material-icons">home</i>Início</a></li>
+            <li><a class="sidenav-close" href="#quem_somos"><i class=" material-icons">business</i>Quem
+                    somos</a></li>
+            <li><a class="sidenav-close" href="#cardapio"><i class=" material-icons">local_grocery_store</i>Produtos</a></li>
+            <li><a class="sidenave-close" href="cardapio.html"><i class="material-icons">local_dining</i>cardápio</a></li>
+            <li><a class="sidenav-close" href="#contatos"><i class=" material-icons">call</i>Contatos</a></li>
+            <li><a class="sidenav-close" href="entrar.html"><i class=" material-icons">account_circle</i>Entrar</a></li>
+        </ul>
+
+        </nav>
+
+        
         <!--fim do Navbar (menu)-->
 
-        <!--Script de importação de codigos necessarios para o menu para dispositivos móveis-->
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <!--Backgroud Gugus Lasanhas-->
 
-        <!--Função Javascript para exibir e ocultar o menu para dispositivos móveis-->
-        <script>
-            $(function () {
-                $(".button-collapse").sideNav({
-                    menuWidth: 250,
-                    edge: 'right'
-
-                });
-            });
-        </script>
-
-        <!--inicio da seção de apresentação-->
         <section>
             <div id="img-fundo" class="">
                 <img class="responsive-img" src="img/teste.png">
             </div>
-            <!--inicio do scrollspy 1-->
 
+
+            <!--inicio da seção 'Quem somos'-->
+            <!--inicio do scrollspy 1-->
             <div id="quem_somos" class="divider scrollspy"></div>
             <div class="container ">
                 <div class="section">
@@ -109,11 +93,10 @@
 
                     </P>
                 </div>
-                <!--Div para exibir linha que separa as seções-->
                 <!--inicio do scrollspy 2-->
-                <div id="cardapio" class="divider scrollspy"></div>
+                <div id="produtos" class="divider scrollspy"></div>
                 <div class="section">
-                    <h1 class="center">Cardápio</h1>
+                    <h1 class="center">Produtos</h1>
                 </div>
 
                 <!--inicio da seção de apresentação dos produtos (CARD)-->
@@ -205,14 +188,12 @@
             </div>
         </div>
     </footer>
-    <!--Codigo javaScript do scrolspy-->
-    <script>
-        $(document).ready(function () {
-            $('.scrollspy').scrollSpy({
-                scrollOffset: 40
-            });
-        });
-    </script>
+    <!--Jquery JS-->
+    <script src="js/jquery-3.3.1.js"></script>
+    <!--materialize JS-->
+    <script src="js/materialize.js"></script>
+    <!--funcçoes de inicialização extras JS-->
+    <script src="js/funcoes_materialize.js"></script>
 
 </body>
 
